@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="request.php" method="">
+        <label for="name">Name</label>
+        <input type="text" name="stu_name" id="name" placeholder="Eg.Mg Mg">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="text" name="stu_email" id="email" required>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="stu_password" id="password" required>
+        <br><br>
+        <label for="phone">Phone</label>
+        <input type="number" name="stuphont" id="phone" >
+        <br><br>
+        <label for="passpoart">Passport</label>
+           <input type="file" accept="image/*" name="stupassport" id="passport">
+           <label for="">Gender</label> <br>
+           <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+           <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+           <input type="radio" name="gender" value="other" id="other"><label for="other">Other</label>
+           <br><b></b>
+           <label for="">Hobby</label>
+           <input type="checkbox" name="travelling" value="travelling" id="travelling"><label for="travelling">Travelling</label>
+           <input type="checkbox" name="graming" value="graming" id="graming"><label for="graming">Graming</label>
+           <input type="checkbox" name="moving" value="moving" id="moving"><label for="moving">Travelling</label>
+           <br><br>
+           <label for="address">Address</label>
+           <textarea name="stuaddress" id="address" cols="20" rows="10"></textarea>
+           <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
