@@ -8,17 +8,65 @@
 </head>
 <body>
     <h1>Exam Result</h1>
-    <form action="" method="post">
-        <label for="Turbo C">Turbo C</label>
-        <input type="Turbo C" name="" id="Turbo C" placeholder="Enter Turbo C Mark" required>
+    <form name="myForm">
+        <label for="C">Turbo C</label>
+        <input type="number" name="C" id=" C" placeholder="Enter Turbo C Mark" required>
         <br><br>
         <label for="Java">Java</label>
-        <input type="text" name="Java" id="Java" placeholder="Enter Java Mark" required>
+        <input type="number" name="Java" id="Java" placeholder="Enter Java Mark" required>
         <br><br>
-        <label for="Javascript">Javascript</label>
-        <input type="text" name="Javascript" id="Javascript" placeholder="Enter JavaScript mark" required>
+        <label for="js">Javascript</label>
+        <input type="number" name="Javascript" id="js" placeholder="Enter JavaScript mark" required>
         <br><br>
-        <button type="submit">Result</button>
+        <button type="button" onclick="result()">Result</button>
+
+        <script>
+            function result(){
+               // alert("Hello")
+               let C= document.myForm.C.value;
+               console.log(C);
+               let Java = document.myForm.Java.value;
+               console.log(Java);
+               let js = document.myForm.js.value;
+               console.log(js);
+
+               //&&
+               //||
+               //!
+
+                if (C>=40 && Java >= 40 && js >=40){
+                    document.write("<h1> This student is Pass!</h1>")
+                    
+                }else {
+                    document.write("<h1>This student is Fail!</h1>")
+                }
+
+                if (C >=80 && Java >=80 && js >=80){
+                    document.write("<h1> This student is distinction!</h1>")
+
+                }else if (C>=40 && Java>=40 && js>=40) {
+                    document.write("<h1>This student is Pass!")
+
+
+                }else {
+                    document.write("<h1>This student is Fail!</h1>")
+                
+                }
+
+
+            }
+
+            
+
+
+
+        </script>
+
+
+
+
+
+
 
 
     </form>
